@@ -9,6 +9,12 @@
 		<!-- DataSource -->
 		<jta-data-source>java:jboss/datasources/pdvDS</jta-data-source>
 		
+		<!-- Class do Sistema -->
+		<class>pdv.entidades.Categoria</class>
+		<class>pdv.entidades.Produto</class>
+		<class>pdv.entidades.Estado</class>
+		<class>pdv.entidades.Cidade</class>
+		
 			
         
 		<properties>		
