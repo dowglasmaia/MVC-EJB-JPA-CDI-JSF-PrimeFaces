@@ -27,7 +27,7 @@ public class Categoria implements Serializable {
 	@NotBlank(message = "Campo Obrigatório")
 	private String nome;
 
-	@JsonIgnore //  Não pode Serializar Suas Cidades
+	@JsonIgnore //  Não pode Serializar Seus Produtos
 	@OneToMany(mappedBy = "categoria") // uma Categoria tem Varios Produtos
 	private List<Produto> produtos = new ArrayList<>();
 
