@@ -5,10 +5,14 @@ import org.junit.Test;
 
 public class TestJUnit {
 
+
+	
 	@Test
 	@Ignore
-	public void salvar() {
-
+	public void salvar() throws Throwable {
+		
+		
+		
 	}
 
 }

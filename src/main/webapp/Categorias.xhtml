@@ -14,8 +14,9 @@
 </h:head>
 
 <h:body>
+	<h:inputHidden value="#{categoriaBean.categoria.id}" />
 	<p:growl id="msg" />
-	<h:form>
+	<h:form id="frmCadastro">
 		<p:fieldset legend="Cadastro de Categorias" style="width: 600px">
 			<h:panelGrid columns="2">
 				<h:outputLabel for="nome" value="Nome" />
@@ -27,7 +28,10 @@
 
 			<p:commandButton action="#{categoriaBean.save}" value="Salvar"
 				update="msg" />
+
 		</p:fieldset>
+
+
 	</h:form>
 
 

@@ -3,19 +3,19 @@ package pdv.dao.interfaces;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.enterprise.context.SessionScoped;
-
-@SessionScoped
 public interface GenericDAO<T> extends Serializable {
 
 	// salvar
-	void save(T obj) throws Throwable;
+	void saveOrUpdate(T obj) throws Throwable;
+
+	// Salvar ou Atualiza e Retorna o Bjt Salvo
+	T merge(T obj) throws Exception;
 
 	// Delete
 	void delete(T obj) throws Exception;
 
 	// Carrega a Lista de Dados
-	List<T> findList(Class<T> objs) throws Exception;
+	List<T> findList(Class<T> entidades) throws Exception;
 
 	// Buscar Por ID
 	T findById(Class<T> entidade, Integer id) throws Exception;
