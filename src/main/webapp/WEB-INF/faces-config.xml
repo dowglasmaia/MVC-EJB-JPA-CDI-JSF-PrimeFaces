@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<faces-config xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd">
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.2"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_2.xsd">
 	<application>
+		<navigation-rule>
+			<from-view-id>/*</from-view-id>
+			<navigation-case>
+				<from-outcome>inicio</from-outcome>
+				<to-view-id>index.xhtml</to-view-id>
+			</navigation-case>
+		</navigation-rule>
+
 		<message-bundle>resources.application</message-bundle>
-		<locale-config>
-			<default-locale>en</default-locale>
-		</locale-config>
-	</application></faces-config>
+	</application>
+</faces-config>
