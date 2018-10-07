@@ -38,7 +38,7 @@ public class DAOGenerico<E> implements Serializable {
 		em.flush();
 	}
 
-	// Atualizar e Salva
+	// Atualizar e Salva com merge
 	public void merge(E obj) throws Exception {
 		em.merge(obj);
 		em.flush();
