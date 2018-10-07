@@ -12,7 +12,7 @@ import javax.transaction.Transactional;
  * 
  * */
 
-@Transactional
+@Transactional(rollbackOn = {Exception.class})
 public class DAOGenerico<E> implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -35,20 +35,20 @@ public class DAOGenerico<E> implements Serializable {
 	// Salva
 	public void persist(E obj) throws Exception {
 		em.persist(obj);
-		em.flush();
+		//em.flush();
 	}
 
 	// Atualizar e Salva
 	public void merge(E obj) throws Exception {
 		em.merge(obj);
-		em.flush();
+		//em.flush();
 	}
 
 	// Remove
 	public void remove(E obj) throws Exception {
 		obj = em.merge(obj);
 		em.remove(obj);
-		em.flush();
+		//em.flush();
 	}
 
 	// Busar Por ID

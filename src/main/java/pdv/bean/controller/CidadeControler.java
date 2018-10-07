@@ -2,7 +2,9 @@ package pdv.bean.controller;
 
 import java.io.Serializable;
 
+import javax.ejb.EJB;
 import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
 import pdv.dao.implementacao.CidadeDAO;
@@ -16,9 +18,12 @@ import pdv.util.PdvUtil;
 public class CidadeControler implements Serializable {
 	private static final long serialVersionUID = 1L;
 
+	@Inject
 	private CidadeDAO<Cidade> dao;
 	private Cidade objeto;
 	private Boolean editando;
+	
+	@Inject
 	private EstadoDAO<Estado> daoEstado;
 
 	// Construtor Padrão
@@ -51,8 +56,7 @@ public class CidadeControler implements Serializable {
 	public void remover(Integer id) {
 		try {
 			objeto = dao.getObjectById(id);
-			dao.remove(objeto);
-			editando = true;
+			dao.remove(objeto);			
 		} catch (Exception e) {
 			PdvUtil.mensagemErro("Erro ao Remover Objeto: " + PdvUtil.getMensagemErro(e));
 		}
@@ -62,12 +66,13 @@ public class CidadeControler implements Serializable {
 	public void salvar() {
 		try {
 			if(objeto.getId() == null) {
-				dao.persist(objeto);
+				dao.persist(objeto);			
 				PdvUtil.mensagemInformacao("Objeto Salvo Com Sucesso!");
 			}else {
 				dao.merge(objeto);
 				PdvUtil.mensagemInformacao("Objeto Atualizado Com Sucesso!");
 			}
+			editando = false;
 		} catch (Exception e) {
 			PdvUtil.mensagemErro("Erro ao Tentar Salvar Objeto: " + PdvUtil.getMensagemErro(e));
 		}

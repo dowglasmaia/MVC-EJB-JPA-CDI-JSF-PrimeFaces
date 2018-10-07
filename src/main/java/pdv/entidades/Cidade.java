@@ -25,7 +25,7 @@ public class Cidade implements Serializable {
 	private String nome;
 	
 	@ManyToOne
-	@JoinColumn(name = "estado_id")
+	@JoinColumn(name = "estado_id", referencedColumnName = "id", nullable = false)
 	private Estado estado;
 	
 	public Cidade() {
@@ -90,6 +90,10 @@ public class Cidade implements Serializable {
 		return true;
 	}
 	
+	@Override
+	public String toString() {
+		return nome;
+	}
 	
 	
 
