@@ -6,8 +6,8 @@
 	
 	<persistence-unit name="PDV" transaction-type="JTA">
 
-		<!-- provedor/implementacao do JPA -->
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		
 		<!-- DataSource -->
 		<jta-data-source>java:jboss/datasources/pdvDS</jta-data-source>

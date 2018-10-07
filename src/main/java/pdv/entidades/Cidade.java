@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,7 +26,7 @@ public class Cidade implements Serializable {
 	private String nome;
 	
 	@ManyToOne
-	@JoinColumn(name = "estado_id", referencedColumnName = "id", nullable = false)
+	@JoinColumn(name = "estado_id", referencedColumnName = "id", nullable = false, foreignKey = @ForeignKey(name ="fk_estado"))
 	private Estado estado;
 	
 	public Cidade() {

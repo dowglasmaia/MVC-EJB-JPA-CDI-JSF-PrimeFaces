@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 import javax.ejb.EJB;
 import javax.faces.view.ViewScoped;
-import javax.inject.Inject;
 import javax.inject.Named;
 
 import pdv.dao.implementacao.CidadeDAO;
@@ -18,13 +17,16 @@ import pdv.util.PdvUtil;
 public class CidadeControler implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Inject
+	@EJB
 	private CidadeDAO<Cidade> dao;
+	
+	@EJB
+	private EstadoDAO<Estado> daoEstado;
+	
 	private Cidade objeto;
 	private Boolean editando;
+
 	
-	@Inject
-	private EstadoDAO<Estado> daoEstado;
 
 	// Construtor Padrão
 	public CidadeControler() {
@@ -56,19 +58,19 @@ public class CidadeControler implements Serializable {
 	public void remover(Integer id) {
 		try {
 			objeto = dao.getObjectById(id);
-			dao.remove(objeto);			
+			dao.remove(objeto);
 		} catch (Exception e) {
 			PdvUtil.mensagemErro("Erro ao Remover Objeto: " + PdvUtil.getMensagemErro(e));
 		}
 	}
 
-	//Salvar
+	// Salvar
 	public void salvar() {
 		try {
-			if(objeto.getId() == null) {
-				dao.persist(objeto);			
+			if (objeto.getId() == null) {
+				dao.persist(objeto);
 				PdvUtil.mensagemInformacao("Objeto Salvo Com Sucesso!");
-			}else {
+			} else {
 				dao.merge(objeto);
 				PdvUtil.mensagemInformacao("Objeto Atualizado Com Sucesso!");
 			}
@@ -77,8 +79,7 @@ public class CidadeControler implements Serializable {
 			PdvUtil.mensagemErro("Erro ao Tentar Salvar Objeto: " + PdvUtil.getMensagemErro(e));
 		}
 	}
-	
-	
+
 	// **Getters e Setters**//
 	public CidadeDAO<Cidade> getDao() {
 		return dao;
