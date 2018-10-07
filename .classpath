@@ -6,18 +6,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/WildFly 10-2018">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web;jst.jsf"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -26,6 +20,246 @@
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jboss-jsf-api_2.1_spec-2.0.9.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="org.jboss.spec.javax.faces"/>
+			<attribute name="maven.artifactId" value="jboss-jsf-api_2.1_spec"/>
+			<attribute name="maven.version" value="2.0.9.Final"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/cdi-api-1.0-SP4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="javax.enterprise"/>
+			<attribute name="maven.artifactId" value="cdi-api"/>
+			<attribute name="maven.version" value="1.0-SP4"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="org.jboss.spec.javax.interceptor"/>
+			<attribute name="maven.artifactId" value="jboss-interceptors-api_1.1_spec"/>
+			<attribute name="maven.version" value="1.0.1.Final"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/javax.inject-1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="javax.inject"/>
+			<attribute name="maven.artifactId" value="javax.inject"/>
+			<attribute name="maven.version" value="1"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jsr250-api-1.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="javax.annotation"/>
+			<attribute name="maven.artifactId" value="jsr250-api"/>
+			<attribute name="maven.version" value="1.0"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/bootsfaces-1.2.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="bootsfaces-1.2.0.jar"/>
+			<attribute name="maven.groupId" value="net.bootsfaces"/>
+			<attribute name="maven.artifactId" value="bootsfaces"/>
+			<attribute name="maven.version" value="1.2.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/primefaces-6.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="primefaces-6.1.jar"/>
+			<attribute name="maven.groupId" value="org.primefaces"/>
+			<attribute name="maven.artifactId" value="primefaces"/>
+			<attribute name="maven.version" value="6.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/junit-4.12.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="junit"/>
+			<attribute name="maven.artifactId" value="junit"/>
+			<attribute name="maven.version" value="4.12"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/hamcrest-core-1.3.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+			<attribute name="maven.groupId" value="org.hamcrest"/>
+			<attribute name="maven.artifactId" value="hamcrest-core"/>
+			<attribute name="maven.version" value="1.3"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jackson-annotations-2.9.6.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jackson-annotations-2.9.6.jar"/>
+			<attribute name="maven.groupId" value="com.fasterxml.jackson.core"/>
+			<attribute name="maven.artifactId" value="jackson-annotations"/>
+			<attribute name="maven.version" value="2.9.6"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/omnifaces-1.14.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="omnifaces-1.14.1.jar"/>
+			<attribute name="maven.groupId" value="org.omnifaces"/>
+			<attribute name="maven.artifactId" value="omnifaces"/>
+			<attribute name="maven.version" value="1.14.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-entitymanager-5.3.6.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-entitymanager-5.3.6.Final.jar"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-entitymanager"/>
+			<attribute name="maven.version" value="5.3.6.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jboss-logging-3.3.2.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jboss-logging-3.3.2.Final.jar"/>
+			<attribute name="maven.groupId" value="org.jboss.logging"/>
+			<attribute name="maven.artifactId" value="jboss-logging"/>
+			<attribute name="maven.version" value="3.3.2.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-core-5.3.6.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-core-5.3.6.Final.jar"/>
+			<attribute name="maven.groupId" value="org.hibernate"/>
+			<attribute name="maven.artifactId" value="hibernate-core"/>
+			<attribute name="maven.version" value="5.3.6.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/javassist-3.23.1-GA.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="javassist-3.23.1-GA.jar"/>
+			<attribute name="maven.groupId" value="org.javassist"/>
+			<attribute name="maven.artifactId" value="javassist"/>
+			<attribute name="maven.version" value="3.23.1-GA"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/antlr-2.7.7.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="antlr-2.7.7.jar"/>
+			<attribute name="maven.groupId" value="antlr"/>
+			<attribute name="maven.artifactId" value="antlr"/>
+			<attribute name="maven.version" value="2.7.7"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jandex-2.0.5.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jandex-2.0.5.Final.jar"/>
+			<attribute name="maven.groupId" value="org.jboss"/>
+			<attribute name="maven.artifactId" value="jandex"/>
+			<attribute name="maven.version" value="2.0.5.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/classmate-1.3.4.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="classmate-1.3.4.jar"/>
+			<attribute name="maven.groupId" value="com.fasterxml"/>
+			<attribute name="maven.artifactId" value="classmate"/>
+			<attribute name="maven.version" value="1.3.4"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/javax.activation-api-1.2.0.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="javax.activation-api-1.2.0.jar"/>
+			<attribute name="maven.groupId" value="javax.activation"/>
+			<attribute name="maven.artifactId" value="javax.activation-api"/>
+			<attribute name="maven.version" value="1.2.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="dom4j-1.6.1.jar"/>
+			<attribute name="maven.groupId" value="dom4j"/>
+			<attribute name="maven.artifactId" value="dom4j"/>
+			<attribute name="maven.version" value="1.6.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="hibernate-commons-annotations-5.0.4.Final.jar"/>
+			<attribute name="maven.groupId" value="org.hibernate.common"/>
+			<attribute name="maven.artifactId" value="hibernate-commons-annotations"/>
+			<attribute name="maven.version" value="5.0.4.Final"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/javax.persistence-api-2.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="javax.persistence-api-2.2.jar"/>
+			<attribute name="maven.groupId" value="javax.persistence"/>
+			<attribute name="maven.artifactId" value="javax.persistence-api"/>
+			<attribute name="maven.version" value="2.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/byte-buddy-1.8.17.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="byte-buddy-1.8.17.jar"/>
+			<attribute name="maven.groupId" value="net.bytebuddy"/>
+			<attribute name="maven.artifactId" value="byte-buddy"/>
+			<attribute name="maven.version" value="1.8.17"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="src/main/webapp/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.archivename" value="jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+			<attribute name="maven.groupId" value="org.jboss.spec.javax.transaction"/>
+			<attribute name="maven.artifactId" value="jboss-transaction-api_1.2_spec"/>
+			<attribute name="maven.version" value="1.1.1.Final"/>
+			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>

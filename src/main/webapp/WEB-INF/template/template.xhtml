@@ -14,15 +14,15 @@
 	<b:container>
 		<!-- Menu -->
 		<h:form id="frmMenu">
-			<b:navBar brand="Sistema Com EJB e JPA">
-				<b:navLink>
+			<b:navBar brand="Sistema Com EJB e JPA" fluid="true">
+				<b:navbarLinks>
 					<b:navLink value="Inicio" outcome="inicio" />
 
 					<b:dropMenu value="Cadastros">
 						<b:navCommandLink value="Cidades"
 							action="#{controleCidade.listar()}" ajax="false " />
 					</b:dropMenu>
-				</b:navLink>
+				</b:navbarLinks>
 			</b:navBar>
 		</h:form>
 

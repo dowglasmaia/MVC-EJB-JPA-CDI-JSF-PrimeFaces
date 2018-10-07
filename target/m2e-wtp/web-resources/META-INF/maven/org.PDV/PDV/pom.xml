@@ -53,6 +53,7 @@
 			<version>6.1</version>
 			<scope>compile</scope>
 		</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -82,7 +83,7 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>5.3.6.Final</version>
 		</dependency>
-	
+
 
 
 	</dependencies>
