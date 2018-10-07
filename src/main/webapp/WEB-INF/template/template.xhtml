@@ -4,19 +4,33 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui">
+	xmlns:b="http://bootsfaces.net/ui" xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title><ui:insert name="titulo"></ui:insert></title>
 </h:head>
-	<h:body>
-		<b:container>
-			<h:form id="frmMenu">
-				<b:navBar brand="PDV com EJB-CDI-JSF-JPA-PRIMEFACES e WILDFLY_10X">
-				
-				</b:navBar>
-			</h:form>
-		</b:container>
-	</h:body>
+<h:body>
+	<b:container>
+		<!-- Menu -->
+		<h:form id="frmMenu">
+			<b:navBar brand="Sistema Com EJB e JPA">
+				<b:navLink>
+					<b:navLink value="Inicio" outcome="inicio" />
+
+					<b:dropMenu value="Cadastros">
+						<b:navCommandLink value="Cidades"
+							action="#{controleCidade.listar()}" ajax="false " />
+					</b:dropMenu>
+				</b:navLink>
+			</b:navBar>
+		</h:form>
+
+		<!-- Conteudo -->
+		<ui:insert name="conteudo">
+
+		</ui:insert>
+
+	</b:container>
+</h:body>
 </html>

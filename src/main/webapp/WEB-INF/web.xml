@@ -7,17 +7,13 @@
 	<!-- Nome da Aplicação -->
 	<display-name>PDV</display-name>
 
-	<!-- Estágio do Projeto -->
-	<context-param>
-		<param-name>javax.faces.PROJECT_STAGE</param-name>
-		<param-value>Development</param-value>
-	</context-param>
-
-	<!-- Tema do Prime Faces -->
+	<!-- Tema do Prime Faces 
 	<context-param>
 		<param-name>primefaces.THEME</param-name>
 		<param-value>bootstrap</param-value>
 	</context-param>
+	
+	-->
 
 	<!-- Configuração do JSF -->
 	<servlet>
@@ -30,6 +26,7 @@
 		<welcome-file>index.xhtml</welcome-file>
 	</welcome-file-list>
 
+	<!-- Extensão da Pagina no Navegador -->
 	<servlet-mapping>
 		<servlet-name>Faces Servlet</servlet-name>
 		<url-pattern>*.xhtml</url-pattern>

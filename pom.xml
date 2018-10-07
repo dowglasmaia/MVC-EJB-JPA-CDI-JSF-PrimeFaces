@@ -39,11 +39,19 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.primefaces/primefaces -->
+		<!-- PrimeFaces e BootStrap - bootsfaces - https://showcase.bootsfaces.net/integration/PrimeFaces.jsf -->
+		<dependency>
+			<groupId>net.bootsfaces</groupId>
+			<artifactId>bootsfaces</artifactId>
+			<version>1.2.0</version>
+			<scope>compile</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
-			<version>6.0</version>
+			<version>6.1</version>
+			<scope>compile</scope>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -74,19 +82,7 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>5.3.6.Final</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/net.bootsfaces/bootsfaces -->
-		<dependency>
-			<groupId>net.bootsfaces</groupId>
-			<artifactId>bootsfaces</artifactId>
-			<version>1.1.3</version>
-		</dependency>
-
-
-
-
-
-
+	
 
 
 	</dependencies>
